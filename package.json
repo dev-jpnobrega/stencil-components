@@ -1,0 +1,40 @@
+{
+  "name": "app-components",
+  "version": "1.0.0",
+  "description": "",
+  "readmeFilename": "README.md" ,
+  "keywords": [
+    "minhas",
+    "palavras",
+    "chaves"
+  ],
+  "tags": [
+    "minhas",
+    "tags"
+  ],
+  "author": {
+    "name": "Jp Nobrega",
+    "email": "jpnobrega66@gmail.com",
+    "homepage": "http://www.medium.com.br"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayrAlencar/sqlite-cipher.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@stencil/core": "0.18.1"
+  }
+}
