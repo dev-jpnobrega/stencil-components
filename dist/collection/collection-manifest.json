@@ -1,0 +1,31 @@
+{
+  "components": [
+    {
+      "tag": "label-component",
+      "dependencies": [],
+      "componentClass": "LabelComponent",
+      "componentPath": "components/label/index.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/label/style.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "value",
+          "type": "String",
+          "attr": "value"
+        }
+      ]
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.18.1",
+    "typescriptVersion": "3.3.3"
+  },
+  "bundles": []
+}

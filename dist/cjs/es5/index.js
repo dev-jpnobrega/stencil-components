@@ -1,0 +1,1 @@
+// labelcomponent: ES Module

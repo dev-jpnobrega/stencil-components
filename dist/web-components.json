@@ -1,0 +1,15 @@
+{
+  "tags": [
+    {
+      "label": "label-component",
+      "description": "",
+      "attributes": [
+        {
+          "label": "value",
+          "description": "",
+          "required": false
+        }
+      ]
+    }
+  ]
+}
