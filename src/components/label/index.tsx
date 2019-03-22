@@ -9,7 +9,7 @@ export class LabelComponent {
   
   render() {
     return (
-      <p>Label value: {this.value}</p>
+      <p>Label vale: {this.value}</p>
     ) 
   }
 }

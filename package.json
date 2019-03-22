@@ -4,13 +4,13 @@
   "description": "",
   "readmeFilename": "README.md" ,
   "keywords": [
-    "minhas",
-    "palavras",
-    "chaves"
+    "stencil",
+    "webcomponents",
+    "web"
   ],
   "tags": [
-    "minhas",
-    "tags"
+    "stencil",
+    "webcomponents"
   ],
   "author": {
     "name": "Jp Nobrega",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JayrAlencar/sqlite-cipher.js"
+    "url": "git+https://github.com/dev-jpnobrega/stencil-components.git"
   },
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
@@ -33,7 +33,7 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@stencil/core": "0.18.1"
   }
