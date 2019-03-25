@@ -2,14 +2,21 @@ import { Component, Prop } from '@stencil/core'
 
 @Component({
   tag: 'label-component',
-  styleUrl: 'style.css'
+  styleUrl: 'style.css',
+  shadow: true,
 })
 export class LabelComponent {
-  @Prop() value: string;
+  @Prop() description: string;
+  @Prop() title: string;
   
   render() {
     return (
-      <p>Label vale: {this.value}</p>
+      <div class='base'>
+        <p>
+          <span class='title'>{this.title}</span><br/>
+          <span class='description'>{this.description}</span>
+        </p>
+      </div>      
     ) 
   }
 }

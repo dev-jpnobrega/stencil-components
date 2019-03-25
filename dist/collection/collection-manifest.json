@@ -14,11 +14,17 @@
       },
       "props": [
         {
-          "name": "value",
+          "name": "description",
           "type": "String",
-          "attr": "value"
+          "attr": "description"
+        },
+        {
+          "name": "title",
+          "type": "String",
+          "attr": "title"
         }
-      ]
+      ],
+      "shadow": true
     }
   ],
   "collections": [],

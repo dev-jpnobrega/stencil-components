@@ -1,5 +1,6 @@
 import '../../stencil.core';
 export declare class LabelComponent {
-    value: string;
+    description: string;
+    title: string;
     render(): JSX.Element;
 }

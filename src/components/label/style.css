@@ -1,0 +1,22 @@
+.title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 12px;
+}
+
+.base {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  padding-left: 0.5%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;  
+  border-radius: 10px;  
+  border: 1px solid darkorange;
+  box-shadow: 2px;
+  text-align: left;
+  vertical-align: middle;
+  margin-bottom: 2%;
+}

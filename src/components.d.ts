@@ -13,10 +13,12 @@ import '@stencil/core';
 export namespace Components {
 
   interface LabelComponent {
-    'value': string;
+    'description': string;
+    'title': string;
   }
   interface LabelComponentAttributes extends StencilHTMLAttributes {
-    'value'?: string;
+    'description'?: string;
+    'title'?: string;
   }
 }
 
