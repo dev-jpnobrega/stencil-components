@@ -1,4 +1,4 @@
-import { h } from '../devjpnobrega.core.js';
+const h = window.devJpnobrega.h;
 
 function Avatar({
   context,
@@ -158,6 +158,7 @@ class ComponentCanvas {
     }
 }
 
+// import ComponentType from './script/types';
 class GravityGameComponent {
     constructor() {
         this.width = 500;
@@ -180,6 +181,8 @@ class GravityGameComponent {
         this.canvas.width = this.width;
         this.canvas.height = this.height;
         this.context = this.canvas.getContext('2d');
+        // this.context.shadowBlur = 15;//  shadow Blur
+        // this.context.shadowColor = '#009933'; // shadow color
         this.createArea.emit({ context: this.context });
         this.interval = setInterval(() => this.updateArea.emit({ score: this.frameNo }), 20);
     }
@@ -287,7 +290,7 @@ class GravityGameComponent {
             "name": "updateArea",
             "method": "updateAreaHandler"
         }]; }
-    static get style() { return "canvas{border:1px solid #d3d3d3;background-color:transparent}.gravity-score{font-family:Arial,Helvetica,sans-serif;font-size:20px;padding:5px;width:auto;border:1px solid #639;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px}"; }
+    static get style() { return "canvas {\n  border:1px solid #d3d3d3;\n  background-color:transparent;\n}\n\n.gravity-score {\n  font-family: Arial, Helvetica, sans-serif;\n  font-size: 20px;\n  padding: 5px;\n  width: auto;\n  border: 1px solid rebeccapurple;\n  -webkit-border-radius: 10px;\n  -moz-border-radius: 10px;\n  border-radius: 10px;\n}"; }
 }
 
 class GravityGameComponent$1 {
@@ -309,6 +312,7 @@ class GravityGameComponent$1 {
     }
     updateScore(score) {
         this.htmlScore.innerText = `SCORE: ${score}`;
+        // this.htmlScore.style.fontSize = `${ this.score }px`;
     }
     createPiece(context) {
         this.piece = new ComponentCanvas({
@@ -364,7 +368,7 @@ class GravityGameComponent$1 {
             "name": "createArea",
             "method": "createAreaHandler"
         }]; }
-    static get style() { return "canvas{border:1px solid #d3d3d3;background-color:transparent}.gravity-score{font-family:Arial,Helvetica,sans-serif;font-size:20px;padding:5px;width:auto;border:1px solid #639;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px}"; }
+    static get style() { return "canvas {\n  border:1px solid #d3d3d3;\n  background-color:transparent;\n}\n\n.gravity-score {\n  font-family: Arial, Helvetica, sans-serif;\n  font-size: 20px;\n  padding: 5px;\n  width: auto;\n  border: 1px solid rebeccapurple;\n  -webkit-border-radius: 10px;\n  -moz-border-radius: 10px;\n  border-radius: 10px;\n}"; }
 }
 
 export { GravityGameComponent as GravityArea, GravityGameComponent$1 as GravityGameComponent };

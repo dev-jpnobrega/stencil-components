@@ -19,6 +19,7 @@ export class GravityGameComponent {
     }
     updateScore(score) {
         this.htmlScore.innerText = `SCORE: ${score}`;
+        // this.htmlScore.style.fontSize = `${ this.score }px`;
     }
     createPiece(context) {
         this.piece = new ComponentCanvas({

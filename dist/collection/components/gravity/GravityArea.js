@@ -1,3 +1,4 @@
+// import ComponentType from './script/types';
 import ComponentCanvas from './script/component-canvas';
 export class GravityGameComponent {
     constructor() {
@@ -21,6 +22,8 @@ export class GravityGameComponent {
         this.canvas.width = this.width;
         this.canvas.height = this.height;
         this.context = this.canvas.getContext('2d');
+        // this.context.shadowBlur = 15;//  shadow Blur
+        // this.context.shadowColor = '#009933'; // shadow color
         this.createArea.emit({ context: this.context });
         this.interval = setInterval(() => this.updateArea.emit({ score: this.frameNo }), 20);
     }
