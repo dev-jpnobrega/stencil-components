@@ -1,0 +1,15 @@
+canvas {
+  border:1px solid #d3d3d3;
+  background-color:transparent;
+}
+
+.gravity-score {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  width: auto;
+  border: 1px solid rebeccapurple;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+} 

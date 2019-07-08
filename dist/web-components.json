@@ -1,0 +1,25 @@
+{
+  "tags": [
+    {
+      "label": "gravity-area",
+      "description": "",
+      "attributes": [
+        {
+          "label": "height",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "piece",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "width",
+          "description": "",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

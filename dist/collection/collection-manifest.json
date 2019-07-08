@@ -1,14 +1,66 @@
 {
   "components": [
     {
-      "tag": "label-component",
+      "tag": "gravity-area",
       "dependencies": [],
-      "componentClass": "LabelComponent",
-      "componentPath": "components/label/index.js",
+      "componentClass": "GravityGameComponent",
+      "componentPath": "components/gravity/GravityArea.js",
       "styles": {
         "$": {
           "stylePaths": [
-            "components/label/style.css"
+            "components/gravity/style.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "height",
+          "type": "Number",
+          "attr": "height"
+        },
+        {
+          "name": "piece",
+          "type": "Any",
+          "attr": "piece"
+        },
+        {
+          "name": "width",
+          "type": "Number",
+          "attr": "width"
+        }
+      ],
+      "listeners": [
+        {
+          "event": "updateArea",
+          "method": "updateAreaHandler",
+          "passive": false,
+          "capture": false
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      },
+      "events": [
+        {
+          "event": "createArea"
+        },
+        {
+          "event": "updateArea"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "gravity-game-component",
+      "dependencies": [
+        "gravity-area"
+      ],
+      "componentClass": "GravityGameComponent",
+      "componentPath": "components/gravity/index.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/gravity/style.css"
           ]
         }
       },
@@ -24,7 +76,28 @@
           "attr": "title"
         }
       ],
-      "shadow": true
+      "states": [
+        {
+          "name": "isStartGame"
+        },
+        {
+          "name": "score"
+        }
+      ],
+      "listeners": [
+        {
+          "event": "createArea",
+          "method": "createAreaHandler",
+          "passive": false,
+          "capture": false
+        },
+        {
+          "event": "updateArea",
+          "method": "updateAreaHandler",
+          "passive": false,
+          "capture": false
+        }
+      ]
     }
   ],
   "collections": [],

@@ -1,7 +1,7 @@
 import { Config } from '@stencil/core';
 
 export const config: Config = {
-  namespace: 'labelcomponent',
+  namespace: 'devJpnobrega',
   srcDir: 'src',
   outputTargets:[
     { type: 'dist' },

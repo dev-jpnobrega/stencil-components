@@ -12,11 +12,24 @@ import './stencil.core';
 
 export namespace Components {
 
-  interface LabelComponent {
+  interface GravityArea {
+    'height': number;
+    'piece': any;
+    'width': number;
+  }
+  interface GravityAreaAttributes extends StencilHTMLAttributes {
+    'height'?: number;
+    'onCreateArea'?: (event: CustomEvent) => void;
+    'onUpdateArea'?: (event: CustomEvent) => void;
+    'piece'?: any;
+    'width'?: number;
+  }
+
+  interface GravityGameComponent {
     'description': string;
     'title': string;
   }
-  interface LabelComponentAttributes extends StencilHTMLAttributes {
+  interface GravityGameComponentAttributes extends StencilHTMLAttributes {
     'description'?: string;
     'title'?: string;
   }
@@ -24,26 +37,36 @@ export namespace Components {
 
 declare global {
   interface StencilElementInterfaces {
-    'LabelComponent': Components.LabelComponent;
+    'GravityArea': Components.GravityArea;
+    'GravityGameComponent': Components.GravityGameComponent;
   }
 
   interface StencilIntrinsicElements {
-    'label-component': Components.LabelComponentAttributes;
+    'gravity-area': Components.GravityAreaAttributes;
+    'gravity-game-component': Components.GravityGameComponentAttributes;
   }
 
 
-  interface HTMLLabelComponentElement extends Components.LabelComponent, HTMLStencilElement {}
-  var HTMLLabelComponentElement: {
-    prototype: HTMLLabelComponentElement;
-    new (): HTMLLabelComponentElement;
+  interface HTMLGravityAreaElement extends Components.GravityArea, HTMLStencilElement {}
+  var HTMLGravityAreaElement: {
+    prototype: HTMLGravityAreaElement;
+    new (): HTMLGravityAreaElement;
+  };
+
+  interface HTMLGravityGameComponentElement extends Components.GravityGameComponent, HTMLStencilElement {}
+  var HTMLGravityGameComponentElement: {
+    prototype: HTMLGravityGameComponentElement;
+    new (): HTMLGravityGameComponentElement;
   };
 
   interface HTMLElementTagNameMap {
-    'label-component': HTMLLabelComponentElement
+    'gravity-area': HTMLGravityAreaElement
+    'gravity-game-component': HTMLGravityGameComponentElement
   }
 
   interface ElementTagNameMap {
-    'label-component': HTMLLabelComponentElement;
+    'gravity-area': HTMLGravityAreaElement;
+    'gravity-game-component': HTMLGravityGameComponentElement;
   }
 
 
