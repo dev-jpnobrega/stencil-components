@@ -1,4 +1,4 @@
-### Web Components Stencil
+### WebComponents with Stencil
 
 ## In this example we implemented Gravity Gamer with canvas.
 
